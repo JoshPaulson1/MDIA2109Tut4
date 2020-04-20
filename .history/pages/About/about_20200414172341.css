@@ -1,0 +1,5 @@
+#About{
+    position: relative;
+    top: -100%;
+    transition: left 1s;
+}

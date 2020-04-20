@@ -1,0 +1,10 @@
+.custom_botton_box {
+    background-color: #dab;
+display: inline-flex;
+border-radius: 5px;
+padding: 10px;
+font-weight: bolder;
+color: #ffffff;
+cursor: pointer;
+box-shadow: 1px 1px 5px #dab;
+}

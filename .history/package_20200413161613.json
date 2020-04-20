@@ -6,10 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start -p $PORT"
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -26,8 +23,7 @@
     "next": "^9.3.3",
     "next-images": "^1.4.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-icons": "^3.9.0"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
