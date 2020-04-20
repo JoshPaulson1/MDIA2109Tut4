@@ -16,24 +16,10 @@ const Contact = () => {
     const [pageleft, setleft] = useState('-100%');
 
     useEffect(() =>{
-        //what to do when its created/born in the life cycle
         setTimeout(() =>{
     setleft(0);
         },50)
-
-        return ()=>{
-            //what to do when componeent dies
-        }
     }, []);
-
-    useEffect(() =>{
-        //what to do when a state in page/compoent updates
-        //
-    setleft(20);
-    setTimeout(()=>{
-        setleft(0);
-    }, 500);
-    },[header_text]);
 
     //step2 - connect the state variable to the UI
 return<div id="contactpage" style={{left:pageleft}}>
@@ -42,7 +28,7 @@ return<div id="contactpage" style={{left:pageleft}}>
         //step3 - connect the state function() to an interaction/ figure out when you want to update the interface
         setHeader(headers_arr[index]);
         index++;
-        if(index > headers_arr.length-1){
+        if(index > headers_arr.length){
             index = 0;
         }
         //setleft("100%");

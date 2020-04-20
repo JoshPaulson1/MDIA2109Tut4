@@ -20,21 +20,11 @@ const Contact = () => {
         setTimeout(() =>{
     setleft(0);
         },50)
-
-        return ()=>{
-            //what to do when componeent dies
-        }
     }, []);
 
     useEffect(() =>{
-        //what to do when a state in page/compoent updates
-        //
-    setleft(20);
-    setTimeout(()=>{
-        setleft(0);
-    }, 500);
+    alert("hi! header text has changed")
     },[header_text]);
-
     //step2 - connect the state variable to the UI
 return<div id="contactpage" style={{left:pageleft}}>
     <Header text={header_text} fontSize={24} />
